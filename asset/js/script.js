@@ -81,6 +81,7 @@ class Crud {
 		model.classList.add("d-none");
 		addBtn.classList.add("d-none")
 		editBtn.classList.add("d-none")
+		Name.value=email.value=number.value=corse.value=null
 	}
 }
 var crudData = new Crud
