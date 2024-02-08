@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crude</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link href="asset/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container position-relative">
+        <div class="text-center">
+            <h1>Crude</h1>
+            <table class="table-bordered mx-auto" style="min-width: 600px !important;">
+                <thead>
+                    <tr>
+                        <th class="p-2 border-3 border-black">Name</th>
+                        <th class="p-2 border-3 border-black">Email</th>
+                        <th class="p-2 border-3 border-black">Phone</th>
+                        <th class="p-2 border-3 border-black">Corse</th>
+                        <th class="p-2 border-3 border-black"><button class="btn btn-outline-success"
+                                onclick="crudData.modalToggle(addBtn)"><i class="bi bi-plus"></i>Add</button></th>
+                    </tr>
+                </thead>
+                <tbody id='showdata'></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Modal for Add Data -->
+    <div id="modal" class="d-none container-fluid position-fixed top-0 start-0 bg-dark bg-opacity-50">
+        <div class="row align-items-center justify-content-center vh-100">
+            <div class=" w-25 border border-black mx-auto p-4 bg-body">
+                <button class="btn-close float-end" onclick="crudData.close()"></button>
+                <form action="">
+                    <h5>Name</h5>
+                    <input type="text" name="" id="name" class="form-control my-2">
+                    <h5>Email</h5>
+                    <input type="text" name="" id="email" class="form-control my-2">
+                    <h5>Phone</h5>
+                    <input type="text" name="" id="number" class="form-control my-2">
+                    <h5>Corse</h5>
+                    <select name="" id="corse" class="form-control my-2">
+                        <option value="Full Stak">Full Stak</option>
+                        <option value="Flutter">Flutter</option>
+                        <option value="Design">Design</option>
+                    </select>
+                    <button class="btn btn-outline-secondary d-none my-2" id="edit"><i
+                            class="bi bi-pencil-fill"></i>Edit</button>
+                    <button class="btn btn-outline-secondary d-none my-2" id="add"><i
+                            class="bi bi-plus"></i>Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="asset/js/script.js"></script>
+
+
+</html>
